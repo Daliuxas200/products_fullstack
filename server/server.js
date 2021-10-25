@@ -5,7 +5,9 @@ const app = express();
 require("dotenv").config();
 
 const port = process.env.PORT || "3001";
-const data = fs.readFileSync(path.resolve(__dirname, "product_list.json"));
+const data = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, "product_list.json"))
+);
 
 app.listen(port, () => {
   console.log(`Server now listening on port ${port}`);
@@ -14,5 +16,5 @@ app.listen(port, () => {
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.status(200).json(data.length);
+  res.status(200).json(data.slice(0, 10));
 });
