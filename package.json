@@ -1,0 +1,17 @@
+{
+  "name": "products_full_stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "npm run start --prefix server",
+    "start-client": "npm run start --prefix client",
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
