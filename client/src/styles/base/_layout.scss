@@ -1,0 +1,4 @@
+.page {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [content-start] 1300px [content-end] 1fr [full-end];
+}
