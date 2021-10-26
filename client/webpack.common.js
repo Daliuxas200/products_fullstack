@@ -42,7 +42,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new c({
+    new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'index.html'),
       title: 'Products',
       meta: {
