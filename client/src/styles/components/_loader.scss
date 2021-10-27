@@ -1,0 +1,14 @@
+.loader {
+  width: 100%;
+  background-color: $color-grey;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 1px rgba($color-dark, 0.1);
+  height: 350px;
+  animation: blink 1s linear 0s infinite;
+  @include respond(medium) {
+    height: 200px;
+  }
+  @include respond(smaller) {
+    height: 150px;
+  }
+}

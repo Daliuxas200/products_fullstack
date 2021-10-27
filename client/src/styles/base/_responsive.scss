@@ -1,0 +1,27 @@
+$bp-large: 1400px;
+$bp-medium: 900px;
+$bp-small: 700px;
+$bp-smaller: 500px;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == smaller {
+    @media only screen and (max-width: $bp-smaller) {
+      @content;
+    }
+  }
+  @if $breakpoint == small {
+    @media only screen and (max-width: $bp-small) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium {
+    @media only screen and (max-width: $bp-medium) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media only screen and (max-width: $bp-large) {
+      @content;
+    }
+  }
+}

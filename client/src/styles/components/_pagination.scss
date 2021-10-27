@@ -1,0 +1,109 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 20px;
+  height: 40px;
+  background: linear-gradient(70deg, $color-secondary, $color-tertiary);
+  border-radius: 10px;
+  box-shadow: 0 0 4px 1px rgba($color-dark, 0.1);
+  padding: 5px 0;
+  @include respond(medium) {
+    font-size: 16px;
+  }
+  @include respond(small) {
+    flex: 1 0 100%;
+  }
+  @include respond(smaller) {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  &__numbers {
+    position: relative;
+    display: flex;
+    gap: 2px;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    @include respond(medium) {
+      gap: 0px;
+    }
+    @include respond(smaller) {
+      padding: 10px 0;
+    }
+  }
+
+  &__number {
+    color: $color-primary;
+    cursor: pointer;
+    padding: 0 8px;
+    min-width: 27px;
+    box-sizing: border-box;
+    @include respond(medium) {
+      padding: 0 4px;
+    }
+    @include respond(smaller) {
+      min-width: 20px;
+      padding: 0 4px;
+    }
+
+    &:hover {
+      color: $color-dark;
+    }
+
+    &.active {
+      font-weight: 700;
+      cursor: default;
+      text-decoration: underline;
+      &:hover {
+        color: $color-dark;
+      }
+    }
+
+    &.disabled {
+      cursor: wait;
+      color: $color-primary;
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+
+  &__dots {
+    color: $color-primary;
+    letter-spacing: 2px;
+  }
+
+  &__arrow {
+    color: $color-primary;
+    border-radius: 6px;
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-dark;
+    }
+
+    &.disabled {
+      cursor: wait;
+      color: $color-dark;
+    }
+
+    &--left {
+      margin-right: 20px;
+      @include respond(medium) {
+        margin-right: 0px;
+      }
+    }
+    &--right {
+      margin-left: 20px;
+      @include respond(medium) {
+        margin-left: 0px;
+      }
+    }
+  }
+}

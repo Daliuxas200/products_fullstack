@@ -9,13 +9,13 @@
   },
   "author": "Dalius Slavickas",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "",
   "dependencies": {
+    "core-js": "^3.19.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",

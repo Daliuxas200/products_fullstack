@@ -1,0 +1,23 @@
+.select {
+  background-color: $color-tertiary;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 1px rgba($color-dark, 0.1);
+  font-size: 20px;
+  cursor: pointer;
+  color: $color-primary;
+  &:hover {
+    color: $color-dark;
+  }
+  @include respond(medium) {
+    font-size: 16px;
+  }
+  @include respond(small) {
+    flex: 1 1 auto;
+  }
+  @include respond(smaller) {
+    font-size: 12px;
+  }
+}

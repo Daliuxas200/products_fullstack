@@ -1,6 +1,12 @@
 @import 'styles/base/reset';
 @import 'styles/base/variables';
+@import 'styles/base/responsive';
+@import 'styles/base/keyframes';
 @import 'styles/base/base';
 @import 'styles/base/layout';
 
 @import 'styles/components/product';
+@import 'styles/components/navigation';
+@import 'styles/components/pagination';
+@import 'styles/components/select';
+@import 'styles/components/loader';

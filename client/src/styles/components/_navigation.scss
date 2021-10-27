@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 20px;
+
+  @include respond(small) {
+    flex-wrap: wrap;
+  }
+
+  &__group {
+    display: flex;
+    gap: 20px;
+    @include respond(small) {
+      flex: 1 0 100%;
+    }
+  }
+}
