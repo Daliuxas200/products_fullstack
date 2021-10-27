@@ -9,7 +9,9 @@ A small project for retrieving and displaying a list of products. Front end was 
 Dev environment was set up utilising npm _concurrently_ package, which lets us conveniently simultaneously run dev scripts for both front and back end. To start the app first install the npm packages for the root , client, and server directories.
 
 `npm i`
+
 `cd ./server` and `npm i`
+
 `cd ./client` and `npm i`
 
 then to launch the dev server and client together, run in the rood directory
